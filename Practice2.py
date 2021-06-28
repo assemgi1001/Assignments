@@ -1,5 +1,5 @@
 highest_score = 0
-result_f = open("Practice.txt")
+result_f = open("../../AppData/Roaming/JetBrains/PyCharmCE2021.1/scratches/Practice.txt")
 for line in result_f:
     (name, score) = line.split()
     if float(score) > highest_score:

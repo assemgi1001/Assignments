@@ -21,19 +21,3 @@ def read_depots(file):
   depots.append(line.rstrip())
  return depots
 
-app = Tk()
-app.title('Head-Ex Deliveries')
-Label(app, text="Depot:").pack()
-depot = StringVar()
-depot.set(None)
-options = read_depots("depots.txt")
-OptionMenu(app, depot, *options).pack()
-
-Label(app, text="Description:").pack()
-description = Entry(app)
-description.pack()
-Label(app, text = "Address:").pack()
-address = Text(app)
-address.pack()
-Button(app, text="Save", command=save_data).pack()
-app.mainloop()

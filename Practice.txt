@@ -1,4 +1,0 @@
-Brad           45.5
-Linda          38.6
-Kate           42.3
-Sam            51.1
