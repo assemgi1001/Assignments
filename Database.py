@@ -8,25 +8,25 @@ app.geometry("400x400")
 
 # Creating a Database to connect with
 
-connect = sqlite3.connect('student.db')
+connect = sqlite3.connect('student1.db')
 
 c = connect.cursor()
 
 
-# Table
+#Table
 
-# c.execute(""" CREATE TABLE registration (
-# first_name text,
-# last_name text,
-# student_id integer,
-# course_name text,
-# phone_number integer,
-# address text)
-# """)
+#c.execute(""" CREATE TABLE registration (
+ #first_name text,
+ #last_name text,
+ #student_id integer,
+ #course_name text,
+ #phone_number integer,
+ #address text)
+  #""")
 
 
 def update():
-    connect = sqlite3.connect('student.db')
+    connect = sqlite3.connect('student1.db')
     c = connect.cursor()
 
     record_id = delete_box.get()
@@ -61,7 +61,7 @@ def edit():
     editor = Tk()
     editor.title('Quarter Register')
     editor.geometry("400x400")
-    connect = sqlite3.connect('student.db')
+    connect = sqlite3.connect('student1.db')
     c = connect.cursor()
     record_id = delete_box.get()
     c.execute("SELECT * From registration WHERE oid= " + record_id)
@@ -113,7 +113,7 @@ def edit():
 
 
 def delete():
-    connect = sqlite3.connect('student.db')
+    connect = sqlite3.connect('student1.db')
     c = connect.cursor()
     c.execute("DELETE from registration WHERE oid= " + delete_box.get())
 
@@ -122,7 +122,7 @@ def delete():
 
 
 def submit():
-    connect = sqlite3.connect('student.db')
+    connect = sqlite3.connect('student1.db')
     c = connect.cursor()
 
     c.execute("INSERT INTO registration VALUES (:f_name, :l_name, :id_num, :course, :phone, :address)",
@@ -146,7 +146,7 @@ def submit():
 
 
 def query():
-    connect = sqlite3.connect('student.db')
+    connect = sqlite3.connect('student1.db')
     c = connect.cursor()
 
     c.execute("SELECT *, oid From registration")
