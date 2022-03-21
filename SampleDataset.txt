@@ -1,0 +1,15 @@
+,Joseph Conrad,Juan Rulfo,Ken Follett,Karl May,Leo Tolstoy, Lord Byron, Malcolm Gladwell
+Alan.Smith,0,0,0,1,0,0,1
+Julia.King,1,1,0,0,0,1,1
+Veronoca.Sammy,0,0,0,0,1,0,0
+Blake.Joan,1,0,1,1,0,0,1
+Boyle.Richard,0,0,0,1,1,0,0
+Bradlee.Charles,1,0,0,0,1,1,1
+Bray.George,1,0,0,1,1,1,0
+Campbell.John,0,0,0,0,1,0,0
+Church.Joanne,0,0,1,0,1,1,1
+Cooper.Anne,0,0,0,1,1,0,0
+Dexter.Felicity,1,0,0,1,0,0,1
+Flagg.Josh,1,0,0,0,0,1,0
+Gill.Austin,0,0,0,0,0,1,0
+Greene.Brian,0,1,1,1,1,1,0
